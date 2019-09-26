@@ -333,144 +333,24 @@
                     </div>
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6">
+
+							<div class="col-lg-4 col-md-6" *ngFor="let i of items ;">
                                 <div class="card card-product card-plain">
                                     <div class="card-image">
                                         <a href="#">
-                                            <img src="assets/img/oldNavyDress.jpg" alt="..." />
+                                            <img src="i.image" alt="..." />
                                         </a>
                                     </div>
                                     <div class="card-body">
                                         <a href="#">
-                                            <h4 class="card-title">Old Navy Dress</h4>
+                                            <h4 class="card-title">{{i.titile}}</h4>
                                         </a>
                                         <p class="card-description">
-                                            Impeccably tailored in Italy from lightweight navy wool.
+                                           {{i.decription}}
                                         </p>
                                         <div class="card-footer">
                                             <div class="price-container">
-                                                <span class="price"> &euro; 300</span>
-                                            </div>
-                                            <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="top" ngbTooltip="Add to shopping cart">PURCHASE</button>
-                                            <!-- <i class="now-ui-icons ui-2_favourite-28"></i> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#">
-                                            <img src="assets/img/oldNavyMensPolo.jpg" alt="..." />
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Old Navy Mens Polo</h4>
-                                        </a>
-                                        <p class="card-description">
-                                            Immaculate tailoring is TOM FORD's forte.
-                                        </p>
-                                        <div class="card-footer">
-                                            <div class="price-container">
-                                                <span class="price"> &euro; 879</span>
-                                            </div>
-                                            <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="top" ngbTooltip="Add to shopping cart">PURCHASE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#">
-                                            <img src="assets/img/wooyoungmi.jpg" alt="..." />
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Wooyoungmi</h4>
-                                        </a>
-                                        <p class="card-description">
-                                            Dark-grey slub wool, pintucked notch lapels.
-                                        </p>
-                                        <div class="card-footer">
-                                            <div class="price-container">
-                                                <span class="price">&euro; 555</span>
-                                            </div>
-                                            <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="top" ngbTooltip="Add to shopping cart">PURCHASE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#">
-                                            <img src="assets/img/sweeney.jpg" alt="..." />
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Thom Sweeney</h4>
-                                        </a>
-                                        <p class="card-description">
-                                            It's made from lightweight grey wool woven.
-                                        </p>
-                                        <div class="card-footer">
-                                            <div class="price-container">
-                                                <span class="price"> &euro; 680</span>
-                                            </div>
-                                            <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="top" ngbTooltip="Add to shopping cart">PURCHASE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#">
-                                            <img src="assets/img/kingsman.jpg" alt="..." />
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Kingsman</h4>
-                                        </a>
-                                        <p class="card-description">
-                                            Crafted from khaki cotton and fully canvassed.
-                                        </p>
-                                        <div class="card-footer">
-                                            <div class="price-container">
-                                                <span class="price"> &euro; 725</span>
-                                            </div>
-                                            <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="top" ngbTooltip="Add to shopping cart">PURCHASE</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#">
-                                            <img src="assets/img/boglioli.jpg" alt="..." />
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Boglioli</h4>
-                                        </a>
-                                        <p class="card-description">
-                                            Masterfully crafted in Northern Italy.
-                                        </p>
-                                        <div class="card-footer">
-                                            <div class="price-container">
-                                                <span class="price">&euro; 699</span>
+                                                <span class="price">&euro; {{i.price}}</span>
                                             </div>
                                             <div></div>
                                             <button class="btn btn-primary btn-round" id="purchaseButton" type="button" placement="middle" ngbTooltip="Add to shopping cart">PURCHASE</button>
@@ -478,7 +358,8 @@
                                     </div>
                                 </div>
                                 <!-- end card -->
-                            </div>
+							</div>
+
                             <div class="col-md-3 ml-auto mr-auto">
                                 <button class="btn btn-primary btn-round"></button>
                             </div>

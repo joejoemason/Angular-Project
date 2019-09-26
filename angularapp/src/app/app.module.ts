@@ -25,14 +25,14 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 import { ImageUploadModule } from '../app/shared/image-upload/image-upload.module';
-import { Subscription } from 'rxjs/Subscription';
+
 
 
 @NgModule({
     declarations: [
         AppComponent,
-    NavbarComponent,
-  ],
+    	NavbarComponent,
+  	],
 
     imports: [
       BrowserAnimationsModule,
@@ -52,7 +52,7 @@ import { Subscription } from 'rxjs/Subscription';
     }),
       ImageUploadModule
     ],
-    providers: [Subscription],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

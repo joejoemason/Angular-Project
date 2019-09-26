@@ -26,14 +26,13 @@ export class AppComponent implements OnInit {
 	@Inject(DOCUMENT) private document: any;
 
   constructor(
-		private _router: Subscription,
 		private renderer: Renderer,
 		private router: Router,
 	  	private element: ElementRef,
 	 	public location: Location
     ) { }
     ngOnInit() {
-        var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
+       /* var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
             if (this.location.path() !== '/sections') {
                 if (window.outerWidth > 991) {
@@ -75,7 +74,7 @@ export class AppComponent implements OnInit {
             body.classList.add('ie-background');
 
         }
-
+	*/
     }
     removeFooter() {
         var titlee = this.location.prepareExternalUrl(this.location.path());
